@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    @apply text-gray-900 antialiased bg-gray-50;
+  }
+}
+
+/* react-image-crop 크롭 박스 커스텀 */
+.ReactCrop__crop-selection {
+  border: 2px solid #2563EB;
+  box-shadow: 0 0 0 9999em rgba(0, 0, 0, 0.45);
+}
+.ReactCrop__drag-handle::after {
+  background-color: #2563EB;
+  border: 2px solid #fff;
+}
